@@ -78,7 +78,7 @@
           <h1 class="mb-7 text-3xl lg:text-6xl text-[#1DD100] raleway font-extrabold">N Paribahan</h1>
           <p class="mb-5 max-w-md mx-auto inter text-base">Yes, you can run unit tests and view the results directly
             within the app. The integrated testing features allow for a streamlined.</p>
-          <button class="btn bg-[#1DD100] raleway font-bold border-0">Buy Tickets</button>
+          <button class="btn bg-[#1DD100] raleway font-bold border-0" id="buy-btn"> <a href="#ticket-buying-section">Buy Tickets</a></button>
         </div>
       </div>
 
@@ -207,7 +207,7 @@
 
 
   <!-- main functionality -->
-  <div class="bg-[#e4e4e4] max-w-screen min-h-80">
+  <div class="bg-[#e4e4e4] max-w-screen min-h-80" id="ticket-buying-section">
     <!-- container-start -->
     <div class="container">
       <!-- section-4 -->
@@ -233,13 +233,13 @@
 
               <div class="important-btn2">
                 <a
-                  class=" btn btn-outline border-1 p-1 lg:px-4 rounded-lg bg-lime-100 text-[#1DD100] font-bold raleway border-[#1DD100] ">
+                  class=" btn btn-outline border-1 p-1 lg:px-4 rounded-lg bg-lime-100 text-[#1DD100] font-bold raleway border-[#1DD100]" id="seatCount">
                   <svg class="hidden lg:flex" width="28" height="29" viewBox="0 0 28 29" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M5.83333 13.6427C6.45217 13.6427 7.04566 13.8885 7.48325 14.3261C7.92083 14.7637 8.16667 15.3572 8.16667 15.976V18.3093H19.8333V15.976C19.8333 15.3572 20.0792 14.7637 20.5168 14.3261C20.9543 13.8885 21.5478 13.6427 22.1667 13.6427M5.83333 13.6427C5.21449 13.6427 4.621 13.8885 4.18342 14.3261C3.74583 14.7637 3.5 15.3572 3.5 15.976V20.6427C3.5 21.2615 3.74583 21.855 4.18342 22.2926C4.621 22.7302 5.21449 22.976 5.83333 22.976H22.1667C22.7855 22.976 23.379 22.7302 23.8166 22.2926C24.2542 21.855 24.5 21.2615 24.5 20.6427V15.976C24.5 15.3572 24.2542 14.7637 23.8166 14.3261C23.379 13.8885 22.7855 13.6427 22.1667 13.6427M5.83333 13.6427V7.80933C5.83333 6.88107 6.20208 5.99083 6.85846 5.33445C7.51484 4.67808 8.40508 4.30933 9.33333 4.30933H18.6667C19.5949 4.30933 20.4852 4.67808 21.1415 5.33445C21.7979 5.99083 22.1667 6.88107 22.1667 7.80933V13.6427M7 22.976V25.3093M21 22.976V25.3093"
                       stroke="#1DD100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg> 8 Seats left
+                  </svg> 12 Seats left
                 </a>
               </div>
 
@@ -301,7 +301,7 @@
 
       <!-- seat-section -->
 
-      <section class="min-h-80 bg-base-100 rounded-[44px] p-4 lg:p-12 mb-12 lg:mb-32">
+      <section class="min-h-80 bg-base-100 rounded-[24px] p-4 lg:p-12 mb-12 lg:mb-32">
 
         <div class="flex flex-col lg:flex-row">
           <!-- LEFT -->
@@ -353,13 +353,13 @@
 
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn text-gray-500 font-bold py-4 px-10 rounded-4" id="A1">
                       A1
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="A2">
                       A2
                     </button>
                   </div>
@@ -367,13 +367,13 @@
                 </div>
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="A3">
                       A3
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="A4">
                       A4
                     </button>
                   </div>
@@ -390,13 +390,13 @@
 
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="B1">
                       B1
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn text-gray-500 font-bold py-4 px-10 rounded-4" id="B2">
                       B2
                     </button>
                   </div>
@@ -404,13 +404,13 @@
                 </div>
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="B3">
                       B3
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="B4">
                       B4
                     </button>
                   </div>
@@ -427,13 +427,13 @@
 
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn text-gray-500 font-bold py-4 px-10 rounded-4" id="C1">
                       C1
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="C2">
                       C2
                     </button>
                   </div>
@@ -441,13 +441,13 @@
                 </div>
                 <div class="flex w-full">
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn  text-gray-500 font-bold py-4 px-10 rounded-4" id="C3">
                       C3
                     </button>
                   </div>
                   <div class="divider divider-horizontal"></div>
                   <div class="grid flex-grow card place-items-center"><button
-                      class="btn hover:bg-[#1DD100] text-gray-500 font-bold py-4 px-10 rounded-4">
+                      class="seat btn text-gray-500 font-bold py-4 px-10 rounded-4" id="C4">
                       C4
                     </button>
                   </div>
@@ -470,41 +470,41 @@
             </h1>
             <div class="card min-h-56 w-full bg-[#f2f1f1] p-4  my-5 rounded-xl">
                <div class="w-ful">
-                <table class="table w-full inter">
-                  <thead class="text-base font-medium text-black border-b-2 border-dashed border-gray-300">
-                      <tr class="text-left">
-                          <th>Seat <span class="badge font-normal text-white text-sm px-3 bg-[#1DD100]">0</span></th>
+                <table class="table w-full inter min-h-12 tabletwo">
+                      <tr class="text-left text-base font-medium text-black border-b-2 border-dashed border-gray-300">
+                          <th>Seat <span class="badge font-normal text-white text-sm px-3 bg-[#1DD100]" id="booked">0</span></th>
                           <th>Class</th>
                           <th>Price</th>
                       </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
+                      <!-- <tr>
                           <td>C2</td>
                           <td>Economy</td>
                           <td>550</td>
-                      </tr>
+                      </tr> -->
+
                       <!-- ... other rows ... -->
-                  </tbody>
+               
               </table>
               
               <!-- price section -->
               <div class="price border-t-2 border-gray-300 py-4">
                 <div class="flex justify-between text-base font-medium text-black">
                   <div>Total Price:</div>
-                  <div>BDT 550</div>
+                  <div id="price">BDT 00</div>
                 
                 </div>
-                <div class="input-secttion my-4 ">
+                <div class="input-secttioncpn my-4 ">
                   <label class="input py-4 px-0 ps-4 flex items-center justify-between">
-                    <input type="text" class="grow" placeholder="Have any coupon?" />
-                    <span class="btn bg-[#1DD100] py-3 px-4 text-white">Apply</span>
+                    <input type="text" class="grow coupon-inp" placeholder="Have any coupon?" />
+                    <button disabled class="btn bg-[#1DD100] py-3 px-4 text-white coupon-inp-btn">Apply</button>
                   </label>
+
                 </div>
+                <div hidden class="text-red-600 text-base py-4" id="thanku">Thank you for using coupon!!!</div>
 
                 <div class="flex justify-between text-base font-medium text-black">
                   <div>Grand Total:</div>
-                  <div>BDT 550</div>
+                  <div id="discount-price">BDT 00</div>
                 </div>
 
 
@@ -527,7 +527,7 @@
                     <span class="label-text text-sm font-bold text-black">Passenger Name*</span>
                   </div>
                 </label>
-                  <input type="text" placeholder="Enter Your Name:" class="input input-bordered w-full p-7"/>
+                  <input type="text" placeholder="Enter Your Name:" class="input input-bordered w-full p-7 name" required/>
               </div>
               <div>
                 <label class="form-control max-w-lg">
@@ -535,19 +535,18 @@
                     <span class="label-text text-sm font-bold text-black">Phone Number*</span>
                   </div>
                 </label>
-                  <input type="text" placeholder="Enter Your Phone Number:" class="input input-bordered w-full p-7"/>
+                  <input type="number" placeholder="Enter Your Phone Number:" class="input input-bordered w-full p-7 phone" required/>
               </div>
               <div>
-                <label class="form-control max-w-lg">
+                <label class="form-control max-w-lg ">
                   <div class="label">
                     <span class="label-text text-sm font-bold text-black">Email ID</span>
                   </div>
                 </label>
-                  <input type="text" placeholder="Enter Your Email ID:" class="input input-bordered w-full p-7"/>
+                  <input type="email" placeholder="Enter Your Email ID:" class="input input-bordered w-full p-7 email" required/>
               </div>
-              <div class="">
-              
-                <button class="btn btn-lg w-full rounded-[18px] items-center text-white text-xl raleway bg-[#1DD100]">Next</button>
+              <div class="">       
+                <button disabled class="next btn btn-lg w-full rounded-[18px] items-center text-white text-xl raleway bg-[#1DD100]">Next</button>
               </div>
               
               <div class="flex justify-around text-gray-500">
@@ -568,13 +567,6 @@
           </div>
 
       </section>
-
-
-
-
-
-
-
 
 
     </div>
