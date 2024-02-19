@@ -18,7 +18,7 @@ seats.forEach(seat =>{
       totalSeat--; // button counts decrease
       booked.textContent =`${selected}`
       seatCount.textContent = `${totalSeat} Seats left` //show seat left
-
+      disablePhonenumber();//enable
 
       seat.style.backgroundColor="#1DD100"; //color change
       seat.style.color = "#ffffff"
@@ -122,3 +122,14 @@ next.addEventListener('click', function() {
         location.reload();
     }, 4000);
 });
+
+
+// disable phon number field
+function disablePhonenumber() {
+    if (selected === 0) {
+        phone.setAttribute('disabled', 'true');
+    } else {
+        phone.removeAttribute('disabled');
+    }
+}
+
