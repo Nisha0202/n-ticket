@@ -114,3 +114,9 @@ button.addEventListener('click', () => {
         alert("Wrong Coupon");    }
 });
 
+// reload window 
+next.addEventListener('click', function() {
+    setTimeout(function() {
+        location.reload();
+    }, 4000);
+});
