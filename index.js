@@ -62,7 +62,9 @@ const next = document.querySelector('.next');
 
 function checkInputs() {
     if (nameinp.value && phone.value && email.value) {
-        next.removeAttribute('disabled')
+        if ((phone.value.length != 0) && (selected != 0) ) { // checking phone number and selected seat
+            next.removeAttribute('disabled');
+        }
     };
 }
 
