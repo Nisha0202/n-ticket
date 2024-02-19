@@ -110,5 +110,7 @@ button.addEventListener('click', () => {
             discountprice.textContent = `BDT ${discount}`
         }
 
-    }
+    }else{
+        alert("Wrong Coupon");    }
 });
+
