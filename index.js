@@ -12,6 +12,7 @@ const price = document.querySelector('#price')
 
 
 seats.forEach(seat =>{
+    
     seat.addEventListener('click',()=>{
       selected++;
       totalSeat--; // button counts decrease
@@ -21,6 +22,7 @@ seats.forEach(seat =>{
 
       seat.style.backgroundColor="#1DD100"; //color change
       seat.style.color = "#ffffff"
+      seat.disabled = 'true' //preventing clicking twice
       if(selected == 4){  // seat clicked at most 4
          seats.forEach(seat =>{
             seat.disabled = 'true'
@@ -42,11 +44,12 @@ seats.forEach(seat =>{
  totalprice = selected*550;
 price.textContent = `BDT ${totalprice}`
 
-
-
-      
+    
     } 
     )
+
+
+
 })
 
 
